@@ -1,0 +1,166 @@
+*{
+	margin: 0px auto; 
+	padding: 0px;
+	box-sizing: border-box;
+}
+#wrapper{
+	width: 960px;
+	background: rgba(112,128,144,0.8);
+}
+h1{
+	color: white;
+	margin: 30px 20px;
+
+}
+label.chbx > span{
+	display: inline-block;
+	width: 90px;
+	color: white;
+	height: 40px;
+	background-color: red;
+	border: 1px solid rgba(255,255,255,0.3);
+	border-radius: 25px;
+	position: relative;
+	background-color:rgb(32,178,170);
+	margin: 10px 10px;
+}
+
+label.chbx >span >span{
+	display: block; 
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 1px;
+	top:1px;
+	background-color: white;
+	border-radius: 50%;
+	background:rgba(238,130,238,0.7);
+}
+label.chbx >span >span:after{
+	content: "NO";
+	position: absolute;
+	top: 10px;
+	left: 50px;
+}
+label.chbx > input:checked + span >span:after {
+	content: "YES"; 
+	position: absolute;
+	top:10px;
+	left: -48px;
+}
+label.chbx > input:checked + span >span{
+	position: absolute;
+	right: 1px;
+	left: auto;
+	background:rgb(238,130,238);
+}
+label.chbx > input:checked + span{
+	background-color: 	rgb(70,130,180);
+}
+label.chbx > span:hover{
+	cursor: pointer;
+}
+label.chbx > input{
+	display: none;
+}
+/**tab**/
+div.tab-content >div{
+	display: none;
+}
+div.tab-content > input{
+	display: none;
+}
+div.tab-header{
+	display: inline-block;
+	position: relative;
+}
+div.tab-header > label{
+	display: inline-block;
+	float: left;
+	padding: 0px 20px;
+	color: blue;
+	line-height: 40px;
+	border-right: 1px solid white;
+	background-color:rgb(135,206,250);
+	font-size: 18px;
+}
+div.tab-header >label:first-child{
+	border-radius: 10px 0px 0px 0px;
+}
+div.tab-header >label:last-child{
+	border-radius: 0px 10px 0px 0px;
+}
+div.tab-content > input:checked + div{
+	display: block;
+}
+div.tab-header>label:hover{
+	cursor: pointer;
+}
+#tab{
+	width: 600px; 
+	height: 400px;
+
+}
+.tab-content{
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	left: auto;
+
+}
+div.tab-header >label:hover:first-child{
+	background-color: rgb(173,216,230);
+}
+div.tab-header >label:hover:nth-child(2){
+	background-color: rgb(32,178,170);
+}
+div.tab-header >label:hover:nth-child(3){
+	background-color: rgba(50,205,50,0.5);
+}
+#blue {
+	
+	background-color:rgb(173,216,230);
+	height: 100%; 
+}
+#coral{
+	background-color:rgb(32,178,170);
+	height: 100%; 
+}
+#cyan{
+	background-color:rgba(50,205,50,0.5);
+	height: 100%; 
+}
+.btn{
+	width: 178px;
+	height: 40px;
+	display: inline-block;
+	margin: 0px 20px 20px 20px;
+	border: 1px solid rgba(255,255,255,0.3) ;
+	border-radius: 8px ;
+	background-color:rgb(186,85,211);
+	position: relative;
+	color: white;
+}
+.btn >span:nth-child(2){
+	position: absolute;
+	display: inline-block;
+	right:5px;
+	top:11px;
+}
+.btn >span:nth-child(1){
+	width: 30px;
+	height: 37px;
+	border-radius: 6px 0px 0px 6px;
+	position: absolute;
+	top: 0.5px;
+	color: black;
+	padding-top: 10px;
+	display: block;
+	background-color:rgb(128,0,128);
+}
+.btn:active {
+	background-color:rgb(70,130,180);
+}
+.btn:hover{
+	cursor: pointer;
+}
